@@ -1,0 +1,363 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "chapter-3",
+					"jsonFile" : "directory-chapter-3-Debug-1fb7a42b6f0e4a82e081.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "chapter-3",
+					"targetIndexes" : 
+					[
+						2,
+						7,
+						14,
+						21
+					]
+				},
+				{
+					"build" : "move",
+					"jsonFile" : "directory-move-Debug-e88ff5c2d0471cffebb5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "move",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						11,
+						13,
+						19,
+						23
+					]
+				},
+				{
+					"build" : "const",
+					"jsonFile" : "directory-const-Debug-bf8c68db2e4256f26026.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "const",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6,
+						22
+					]
+				},
+				{
+					"build" : "class",
+					"jsonFile" : "directory-class-Debug-943a6d49c962ebc75cfb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "class",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "share_ptr",
+					"jsonFile" : "directory-share_ptr-Debug-663f7687e8c40e8f1e29.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "share_ptr",
+					"targetIndexes" : 
+					[
+						10,
+						12,
+						20
+					]
+				},
+				{
+					"build" : "virtual",
+					"jsonFile" : "directory-virtual-Debug-4d1f9d38ab5510b8095a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "virtual",
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "CppStudy",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "align::@5b9ac6c6c049cf5a224c",
+					"jsonFile" : "target-align-Debug-28665b46438b8ad317af.json",
+					"name" : "align",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "align2::@5b9ac6c6c049cf5a224c",
+					"jsonFile" : "target-align2-Debug-222dae497071f8c084bd.json",
+					"name" : "align2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "auto::@009dc11399d54e2cb598",
+					"jsonFile" : "target-auto-Debug-b8dbffe90128e314906f.json",
+					"name" : "auto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "class_a::@b6006207bac832bbf61c",
+					"jsonFile" : "target-class_a-Debug-f1e26f5e42ba0a413193.json",
+					"name" : "class_a",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "class_b::@b6006207bac832bbf61c",
+					"jsonFile" : "target-class_b-Debug-d3ec9efbc6157c31768d.json",
+					"name" : "class_b",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "class_test::@b6006207bac832bbf61c",
+					"jsonFile" : "target-class_test-Debug-3ae8b56c27bd290a153b.json",
+					"name" : "class_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "const_1::@5b9ac6c6c049cf5a224c",
+					"jsonFile" : "target-const_1-Debug-3ac9ffe52258e45bf69f.json",
+					"name" : "const_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "decltype::@009dc11399d54e2cb598",
+					"jsonFile" : "target-decltype-Debug-daf09f4bebff095ef391.json",
+					"name" : "decltype",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "demo_1::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-demo_1-Debug-aefab51385c09933e8ef.json",
+					"name" : "demo_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "demo_2::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-demo_2-Debug-5eb848d6056f70f12f45.json",
+					"name" : "demo_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "fjgk::@2d1b8d51ab79bae88b29",
+					"jsonFile" : "target-fjgk-Debug-713d7706d797a3a81b0c.json",
+					"name" : "fjgk",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rightv::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-rightv-Debug-574dcf66f8da8a51595e.json",
+					"name" : "rightv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "share_ptr::@2d1b8d51ab79bae88b29",
+					"jsonFile" : "target-share_ptr-Debug-d5aee234b6db98548e3f.json",
+					"name" : "share_ptr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "temp::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-temp-Debug-91f3d6354c78c28d0ae5.json",
+					"name" : "temp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test::@009dc11399d54e2cb598",
+					"jsonFile" : "target-test-Debug-ee401a8f82f899fb62ba.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "test_1::@caf4beac33e43676cac5",
+					"jsonFile" : "target-test_1-Debug-4a7d81d1e8d42d13593d.json",
+					"name" : "test_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "test_4::@caf4beac33e43676cac5",
+					"jsonFile" : "target-test_4-Debug-0717b8b3952791f50f66.json",
+					"name" : "test_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "test_5::@caf4beac33e43676cac5",
+					"jsonFile" : "target-test_5-Debug-6dae50cef45bce19d388.json",
+					"name" : "test_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "test_6::@caf4beac33e43676cac5",
+					"jsonFile" : "target-test_6-Debug-a729ded6d13e4e7f8539.json",
+					"name" : "test_6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_move::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-test_move-Debug-ec2cba06367f405530d3.json",
+					"name" : "test_move",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "test_share_ptr_1::@2d1b8d51ab79bae88b29",
+					"jsonFile" : "target-test_share_ptr_1-Debug-b94a3855f0ebd471cf46.json",
+					"name" : "test_share_ptr_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testcc::@009dc11399d54e2cb598",
+					"jsonFile" : "target-testcc-Debug-7c06a0671b9fa7ee3201.json",
+					"name" : "testcc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "tmp::@5b9ac6c6c049cf5a224c",
+					"jsonFile" : "target-tmp-Debug-51b9051af44422f701a8.json",
+					"name" : "tmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "vector_1::@b83d8ff949ce5bd2977c",
+					"jsonFile" : "target-vector_1-Debug-4618a017489ee5708ff3.json",
+					"name" : "vector_1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zhangbingshuai/cpp-study/build",
+		"source" : "/home/zhangbingshuai/cpp-study"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

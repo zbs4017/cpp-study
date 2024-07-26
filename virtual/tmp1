@@ -1,0 +1,163 @@
+Vtable for 'ABParent' (5 entries).
+   0 | offset_to_top (0)
+   1 | ABParent RTTI
+       -- (ABParent, 0) vtable address --
+   2 | void ABParent::parent_virtual1()
+   3 | void ABParent::parent_virtual2()
+   4 | void ABParent::parent_virtual3()
+
+VTable indices for 'ABParent' (3 entries).
+   0 | void ABParent::parent_virtual1()
+   1 | void ABParent::parent_virtual2()
+   2 | void ABParent::parent_virtual3()
+
+Vtable for 'ABChild' (25 entries).
+   0 | vbase_offset (32)
+   1 | offset_to_top (0)
+   2 | ABChild RTTI
+       -- (A, 0) vtable address --
+       -- (ABChild, 0) vtable address --
+   3 | void A::a_virtual1()
+   4 | void A::a_virtual2()
+   5 | void A::parent_virtual1()
+   6 | void ABChild::a_pure()
+   7 | void ABChild::b_pure()
+   8 | void ABChild::child_virtual1()
+   9 | void ABChild::child_virtual2()
+  10 | vbase_offset (16)
+  11 | offset_to_top (-16)
+  12 | ABChild RTTI
+       -- (B, 16) vtable address --
+  13 | void B::b_virtual1()
+  14 | void B::b_virtual2()
+  15 | void B::parent_virtual2()
+  16 | void ABChild::b_pure()
+       [this adjustment: -16 non-virtual]
+  17 | vcall_offset (0)
+  18 | vcall_offset (-16)
+  19 | vcall_offset (-32)
+  20 | offset_to_top (-32)
+  21 | ABChild RTTI
+       -- (ABParent, 32) vtable address --
+  22 | void A::parent_virtual1()
+       [this adjustment: 0 non-virtual, -24 vcall offset offset]
+  23 | void B::parent_virtual2()
+       [this adjustment: 0 non-virtual, -32 vcall offset offset]
+  24 | void ABParent::parent_virtual3()
+
+Virtual base offset offsets for 'ABChild' (1 entry).
+   ABParent | -24
+
+Thunks for 'void ABChild::b_pure()' (1 entry).
+   0 | this adjustment: -16 non-virtual
+
+VTable indices for 'ABChild' (4 entries).
+   3 | void ABChild::a_pure()
+   4 | void ABChild::b_pure()
+   5 | void ABChild::child_virtual1()
+   6 | void ABChild::child_virtual2()
+
+Construction vtable for ('A', 0) in 'ABChild' (15 entries).
+   0 | vbase_offset (32)
+   1 | offset_to_top (0)
+   2 | A RTTI
+       -- (A, 0) vtable address --
+   3 | void A::a_virtual1()
+   4 | void A::a_virtual2()
+   5 | void A::parent_virtual1()
+   6 | void A::a_pure() [pure]
+   7 | vcall_offset (0)
+   8 | vcall_offset (0)
+   9 | vcall_offset (-32)
+  10 | offset_to_top (-32)
+  11 | A RTTI
+       -- (ABParent, 32) vtable address --
+  12 | void A::parent_virtual1()
+       [this adjustment: 0 non-virtual, -24 vcall offset offset]
+  13 | void ABParent::parent_virtual2()
+  14 | void ABParent::parent_virtual3()
+
+Construction vtable for ('B', 16) in 'ABChild' (15 entries).
+   0 | vbase_offset (16)
+   1 | offset_to_top (0)
+   2 | B RTTI
+       -- (B, 16) vtable address --
+   3 | void B::b_virtual1()
+   4 | void B::b_virtual2()
+   5 | void B::parent_virtual2()
+   6 | void B::b_pure() [pure]
+   7 | vcall_offset (0)
+   8 | vcall_offset (-16)
+   9 | vcall_offset (0)
+  10 | offset_to_top (-16)
+  11 | B RTTI
+       -- (ABParent, 32) vtable address --
+  12 | void ABParent::parent_virtual1()
+  13 | void B::parent_virtual2()
+       [this adjustment: 0 non-virtual, -32 vcall offset offset]
+  14 | void ABParent::parent_virtual3()
+
+Vtable for 'A' (15 entries).
+   0 | vbase_offset (16)
+   1 | offset_to_top (0)
+   2 | A RTTI
+       -- (A, 0) vtable address --
+   3 | void A::a_virtual1()
+   4 | void A::a_virtual2()
+   5 | void A::parent_virtual1()
+   6 | void A::a_pure() [pure]
+   7 | vcall_offset (0)
+   8 | vcall_offset (0)
+   9 | vcall_offset (-16)
+  10 | offset_to_top (-16)
+  11 | A RTTI
+       -- (ABParent, 16) vtable address --
+  12 | void A::parent_virtual1()
+       [this adjustment: 0 non-virtual, -24 vcall offset offset]
+  13 | void ABParent::parent_virtual2()
+  14 | void ABParent::parent_virtual3()
+
+Virtual base offset offsets for 'A' (1 entry).
+   ABParent | -24
+
+Thunks for 'void A::parent_virtual1()' (1 entry).
+   0 | this adjustment: 0 non-virtual, -24 vcall offset offset
+
+VTable indices for 'A' (4 entries).
+   0 | void A::a_virtual1()
+   1 | void A::a_virtual2()
+   2 | void A::parent_virtual1()
+   3 | void A::a_pure()
+
+Vtable for 'B' (15 entries).
+   0 | vbase_offset (16)
+   1 | offset_to_top (0)
+   2 | B RTTI
+       -- (B, 0) vtable address --
+   3 | void B::b_virtual1()
+   4 | void B::b_virtual2()
+   5 | void B::parent_virtual2()
+   6 | void B::b_pure() [pure]
+   7 | vcall_offset (0)
+   8 | vcall_offset (-16)
+   9 | vcall_offset (0)
+  10 | offset_to_top (-16)
+  11 | B RTTI
+       -- (ABParent, 16) vtable address --
+  12 | void ABParent::parent_virtual1()
+  13 | void B::parent_virtual2()
+       [this adjustment: 0 non-virtual, -32 vcall offset offset]
+  14 | void ABParent::parent_virtual3()
+
+Virtual base offset offsets for 'B' (1 entry).
+   ABParent | -24
+
+Thunks for 'void B::parent_virtual2()' (1 entry).
+   0 | this adjustment: 0 non-virtual, -32 vcall offset offset
+
+VTable indices for 'B' (4 entries).
+   0 | void B::b_virtual1()
+   1 | void B::b_virtual2()
+   2 | void B::parent_virtual2()
+   3 | void B::b_pure()
+

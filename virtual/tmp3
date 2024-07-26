@@ -1,0 +1,12 @@
+Vtable for 'C' (4 entries).
+   0 | vbase_offset (16)
+   1 | vbase_offset (12)
+   2 | offset_to_top (0)
+   3 | C RTTI
+       -- (C, 0) vtable address --
+
+Virtual base offset offsets for 'C' (2 entries).
+   A | -24
+   B | -32
+
+

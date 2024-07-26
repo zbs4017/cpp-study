@@ -1,0 +1,208 @@
+
+*** Dumping AST Record Layout
+         0 | struct ABParent
+         0 |   (ABParent vtable pointer)
+         8 |   int k
+           | [sizeof=16, dsize=12, align=8,
+           |  nvsize=12, nvalign=8]
+
+*** Dumping AST Record Layout
+         0 | struct A
+         0 |   (A vtable pointer)
+         8 |   int a
+        16 |   struct ABParent (virtual base)
+        16 |     (ABParent vtable pointer)
+        24 |     int k
+           | [sizeof=32, dsize=28, align=8,
+           |  nvsize=12, nvalign=8]
+
+*** Dumping AST Record Layout
+         0 | struct B
+         0 |   (B vtable pointer)
+         8 |   int b
+        16 |   struct ABParent (virtual base)
+        16 |     (ABParent vtable pointer)
+        24 |     int k
+           | [sizeof=32, dsize=28, align=8,
+           |  nvsize=12, nvalign=8]
+
+*** Dumping AST Record Layout
+         0 | struct ABChild
+         0 |   struct A (primary base)
+         0 |     (A vtable pointer)
+         8 |     int a
+        16 |   struct B (base)
+        16 |     (B vtable pointer)
+        24 |     int b
+        32 |   struct ABParent (virtual base)
+        32 |     (ABParent vtable pointer)
+        40 |     int k
+           | [sizeof=48, dsize=44, align=8,
+           |  nvsize=28, nvalign=8]
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x2519180[0m <[0;33mtest_5.cpp:1:1[0m, [0;33mline:6:1[0m> [0;33mline:1:8[0m referenced struct[0;1;36m ABParent[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x2519298[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m ABParent[0m
+[0;34m|-[0m[0;1;32mFieldDecl[0m[0;33m 0x2519340[0m <[0;33mline:2:3[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m k[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519408[0m <[0;33mline:3:3[0m, [0;33mcol:35[0m> [0;33mcol:16[0m[0;1;36m parent_virtual1[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x2519ac0[0m <[0;33mcol:34[0m, [0;33mcol:35[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x25194c8[0m <[0;33mline:4:3[0m, [0;33mcol:35[0m> [0;33mcol:16[0m[0;1;36m parent_virtual2[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x2519ad0[0m <[0;33mcol:34[0m, [0;33mcol:35[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519588[0m <[0;33mline:5:3[0m, [0;33mcol:35[0m> [0;33mcol:16[0m used[0;1;36m parent_virtual3[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x2519ae0[0m <[0;33mcol:34[0m, [0;33mcol:35[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519688[0m <[0;33mline:1:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'ABParent &(const ABParent &)'[0m inline default noexcept-unevaluated 0x2519688
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2519798[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const ABParent &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519838[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'ABParent &(ABParent &&)'[0m inline default noexcept-unevaluated 0x2519838
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2519948[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'ABParent &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x25199e0[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~ABParent[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x25199e0
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2552f78[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m ABParent[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x2556678[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2553818[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m ABParent[0m [0;32m'void (const ABParent &)'[0m inline default noexcept-unevaluated 0x2553818
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553928[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const ABParent &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x25539a8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit constexpr[0;1;36m ABParent[0m [0;32m'void (ABParent &&)'[0m inline default noexcept-unevaluated 0x25539a8
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553ab8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'ABParent &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.ABParent = type <{ i32 (...)**, i32, [4 x i8] }>
+  NonVirtualBaseLLVMType:%struct.ABParent.base = type <{ i32 (...)**, i32 }>
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x2519af0[0m <[0;33mtest_5.cpp:7:1[0m, [0;33mline:14:1[0m> [0;33mline:7:8[0m referenced struct[0;1;36m A[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic abstract
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'ABParent'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x2519c60[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m A[0m
+[0;34m|-[0m[0;1;32mFieldDecl[0m[0;33m 0x2519d08[0m <[0;33mline:8:3[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m a[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519da8[0m <[0;33mline:9:3[0m, [0;33mcol:30[0m> [0;33mcol:16[0m[0;1;36m a_virtual1[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254ba20[0m <[0;33mcol:29[0m, [0;33mcol:30[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519e68[0m <[0;33mline:10:3[0m, [0;33mcol:30[0m> [0;33mcol:16[0m[0;1;36m a_virtual2[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254ba30[0m <[0;33mcol:29[0m, [0;33mcol:30[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519f28[0m <[0;33mline:11:3[0m, [0;33mcol:35[0m> [0;33mcol:16[0m[0;1;36m parent_virtual1[0m [0;32m'void ()'[0m virtual
+[0;34m| |-[0mOverrides: [ 0x2519408 ABParent::parent_virtual1 'void ()' ]
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254ba40[0m <[0;33mcol:34[0m, [0;33mcol:35[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x2519fe8[0m <[0;33mline:12:3[0m, [0;33mcol:27[0m> [0;33mcol:16[0m[0;1;36m a_pure[0m [0;32m'void ()'[0m virtual pure
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254b4f0[0m <[0;33mline:13:3[0m, [0;33mcol:16[0m> [0;33mcol:8[0m[0;1;36m a_do[0m [0;32m'void ()'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254ba50[0m <[0;33mcol:15[0m, [0;33mcol:16[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254b5e8[0m <[0;33mline:7:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'A &(const A &)'[0m inline default noexcept-unevaluated 0x254b5e8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254b6f8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const A &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254b798[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'A &(A &&)'[0m inline default noexcept-unevaluated 0x254b798
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254b8a8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'A &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x254b940[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~A[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x254b940
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2550128[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m A[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x25566e0[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x25531d8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m A[0m [0;32m'void (const A &)'[0m inline default noexcept-unevaluated 0x25531d8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x25532e8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const A &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2553368[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m A[0m [0;32m'void (A &&)'[0m inline default noexcept-unevaluated 0x2553368
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553478[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'A &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.A = type <{ i32 (...)**, i32, [4 x i8], %struct.ABParent.base, [4 x i8] }>
+  NonVirtualBaseLLVMType:%struct.A.base = type <{ i32 (...)**, i32 }>
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x254ba60[0m <[0;33mtest_5.cpp:15:1[0m, [0;33mline:22:1[0m> [0;33mline:15:8[0m referenced struct[0;1;36m B[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic abstract
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mvirtual public [0;32m'ABParent'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x254bbd0[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m B[0m
+[0;34m|-[0m[0;1;32mFieldDecl[0m[0;33m 0x254bc78[0m <[0;33mline:16:3[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m b[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254bd18[0m <[0;33mline:17:3[0m, [0;33mcol:30[0m> [0;33mcol:16[0m[0;1;36m b_virtual1[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254f310[0m <[0;33mcol:29[0m, [0;33mcol:30[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254bdd8[0m <[0;33mline:18:3[0m, [0;33mcol:30[0m> [0;33mcol:16[0m[0;1;36m b_virtual2[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254f320[0m <[0;33mcol:29[0m, [0;33mcol:30[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254be98[0m <[0;33mline:19:3[0m, [0;33mcol:35[0m> [0;33mcol:16[0m[0;1;36m parent_virtual2[0m [0;32m'void ()'[0m virtual
+[0;34m| |-[0mOverrides: [ 0x25194c8 ABParent::parent_virtual2 'void ()' ]
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254f330[0m <[0;33mcol:34[0m, [0;33mcol:35[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254bf58[0m <[0;33mline:20:3[0m, [0;33mcol:27[0m> [0;33mcol:16[0m[0;1;36m b_pure[0m [0;32m'void ()'[0m virtual pure
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254c018[0m <[0;33mline:21:3[0m, [0;33mcol:16[0m> [0;33mcol:8[0m[0;1;36m b_do[0m [0;32m'void ()'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254f340[0m <[0;33mcol:15[0m, [0;33mcol:16[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254c118[0m <[0;33mline:15:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'B &(const B &)'[0m inline default noexcept-unevaluated 0x254c118
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254c228[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254c2c8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'B &(B &&)'[0m inline default noexcept-unevaluated 0x254c2c8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254c3d8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x254f230[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~B[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x254f230
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2552e80[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m B[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x2556748[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x25534f8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m B[0m [0;32m'void (const B &)'[0m inline default noexcept-unevaluated 0x25534f8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553608[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const B &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2553688[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m B[0m [0;32m'void (B &&)'[0m inline default noexcept-unevaluated 0x2553688
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553798[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'B &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.B = type <{ i32 (...)**, i32, [4 x i8], %struct.ABParent.base, [4 x i8] }>
+  NonVirtualBaseLLVMType:%struct.B.base = type <{ i32 (...)**, i32 }>
+  IsZeroInitializable:1
+  BitFields:[
+]>
+
+*** Dumping IRgen Record Layout
+Record: [0;1;32mCXXRecordDecl[0m[0;33m 0x254f350[0m <[0;33mtest_5.cpp:24:1[0m, [0;33mline:29:1[0m> [0;33mline:24:8[0m referenced struct[0;1;36m ABChild[0m definition
+[0;34m|-[0m[0;1;32mDefinitionData[0m polymorphic
+[0;34m| |-[0m[0;1;32mDefaultConstructor[0m exists non_trivial
+[0;34m| |-[0m[0;1;32mCopyConstructor[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveConstructor[0m exists simple non_trivial
+[0;34m| |-[0m[0;1;32mCopyAssignment[0m simple non_trivial has_const_param implicit_has_const_param
+[0;34m| |-[0m[0;1;32mMoveAssignment[0m exists simple non_trivial
+[0;34m| `-[0m[0;1;32mDestructor[0m simple irrelevant trivial
+[0;34m|-[0mpublic [0;32m'A'[0m
+[0;34m|-[0mpublic [0;32m'B'[0m
+[0;34m|-[0m[0;1;32mCXXRecordDecl[0m[0;33m 0x254f500[0m <[0;33mcol:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m implicit struct[0;1;36m ABChild[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254f5d8[0m <[0;33mline:25:3[0m, [0;33mcol:27[0m> [0;33mcol:8[0m[0;1;36m a_pure[0m [0;32m'void ()'[0m
+[0;34m| |-[0mOverrides: [ 0x2519fe8 A::a_pure 'void ()' ]
+[0;34m| |-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254fe00[0m <[0;33mcol:26[0m, [0;33mcol:27[0m>
+[0;34m| `-[0m[0;1;34mOverrideAttr[0m[0;33m 0x254f678[0m <[0;33mcol:17[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254f6f0[0m <[0;33mline:26:3[0m, [0;33mcol:27[0m> [0;33mcol:8[0m[0;1;36m b_pure[0m [0;32m'void ()'[0m
+[0;34m| |-[0mOverrides: [ 0x254bf58 B::b_pure 'void ()' ]
+[0;34m| |-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254fe10[0m <[0;33mcol:26[0m, [0;33mcol:27[0m>
+[0;34m| `-[0m[0;1;34mOverrideAttr[0m[0;33m 0x254f790[0m <[0;33mcol:17[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254f808[0m <[0;33mline:27:3[0m, [0;33mcol:34[0m> [0;33mcol:16[0m[0;1;36m child_virtual1[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254fe20[0m <[0;33mcol:33[0m, [0;33mcol:34[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254f8c8[0m <[0;33mline:28:3[0m, [0;33mcol:34[0m> [0;33mcol:16[0m[0;1;36m child_virtual2[0m [0;32m'void ()'[0m virtual
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x254fe30[0m <[0;33mcol:33[0m, [0;33mcol:34[0m>
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254f9c8[0m <[0;33mline:24:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'ABChild &(const ABChild &)'[0m inline default noexcept-unevaluated 0x254f9c8
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254fad8[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const ABChild &'[0m
+[0;34m|-[0m[0;1;32mCXXMethodDecl[0m[0;33m 0x254fb78[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m operator=[0m [0;32m'ABChild &(ABChild &&)'[0m inline default noexcept-unevaluated 0x254fb78
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x254fc88[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'ABChild &&'[0m
+[0;34m|-[0m[0;1;32mCXXDestructorDecl[0m[0;33m 0x254fd20[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ~ABChild[0m [0;32m'void ()'[0m inline default trivial noexcept-unevaluated 0x254fd20
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2550030[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit used[0;1;36m ABChild[0m [0;32m'void () noexcept'[0m inline default
+[0;34m| |-[0mCXXCtorInitializer [0;32m'ABParent'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x2556688[0m <[0;33mcol:8[0m> [0;32m'ABParent'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| |-[0mCXXCtorInitializer [0;32m'A'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x25566f0[0m <[0;33mcol:8[0m> [0;32m'A'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| |-[0mCXXCtorInitializer [0;32m'B'[0m
+[0;34m| | `-[0m[0;1;35mCXXConstructExpr[0m[0;33m 0x2556758[0m <[0;33mcol:8[0m> [0;32m'B'[0m[0;36m[0m[0;36m[0m [0;32m'void () noexcept'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x25567c8[0m <[0;33mcol:8[0m>
+[0;34m|-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2553050[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ABChild[0m [0;32m'void (const ABChild &)'[0m inline default noexcept-unevaluated 0x2553050
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553168[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'const ABChild &'[0m
+[0;34m`-[0m[0;1;32mCXXConstructorDecl[0m[0;33m 0x2553b48[0m <[0;33mcol:8[0m> [0;33mcol:8[0m implicit[0;1;36m ABChild[0m [0;32m'void (ABChild &&)'[0m inline default noexcept-unevaluated 0x2553b48
+[0;34m  `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x2553c58[0m <[0;33mcol:8[0m> [0;33mcol:8[0m [0;32m'ABChild &&'[0m
+
+Layout: <CGRecordLayout
+  LLVMType:%struct.ABChild = type { %struct.A.base, [4 x i8], %struct.B.base, [4 x i8], %struct.ABParent.base, [4 x i8] }
+  NonVirtualBaseLLVMType:%struct.ABChild.base = type { %struct.A.base, [4 x i8], %struct.B.base }
+  IsZeroInitializable:1
+  BitFields:[
+]>

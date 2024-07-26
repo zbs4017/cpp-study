@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o chapter-3/CMakeFiles/auto.dir/auto.cpp.o -c /home/zhangbingshuai/cpp-study/chapter-3/auto.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/chapter-3/auto.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o chapter-3/CMakeFiles/decltype.dir/decltype.cpp.o -c /home/zhangbingshuai/cpp-study/chapter-3/decltype.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/chapter-3/decltype.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o chapter-3/CMakeFiles/test.dir/test.cpp.o -c /home/zhangbingshuai/cpp-study/chapter-3/test.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/chapter-3/test.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o chapter-3/CMakeFiles/testcc.dir/testcc.cpp.o -c /home/zhangbingshuai/cpp-study/chapter-3/testcc.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/chapter-3/testcc.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/demo_1.dir/demo_1.cpp.o -c /home/zhangbingshuai/cpp-study/move/demo_1.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/demo_1.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/demo_2.dir/demo_2.cpp.o -c /home/zhangbingshuai/cpp-study/move/demo_2.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/demo_2.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/rightv.dir/rightv.cpp.o -c /home/zhangbingshuai/cpp-study/move/rightv.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/rightv.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/temp.dir/temp.cpp.o -c /home/zhangbingshuai/cpp-study/move/temp.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/temp.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/test_move.dir/test_move.cpp.o -c /home/zhangbingshuai/cpp-study/move/test_move.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/test_move.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o move/CMakeFiles/vector_1.dir/vector_1.cpp.o -c /home/zhangbingshuai/cpp-study/move/vector_1.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/move/vector_1.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o const/CMakeFiles/align.dir/align.cpp.o -c /home/zhangbingshuai/cpp-study/const/align.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/const/align.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o const/CMakeFiles/align2.dir/align2.cpp.o -c /home/zhangbingshuai/cpp-study/const/align2.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/const/align2.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o const/CMakeFiles/const_1.dir/const_1.cpp.o -c /home/zhangbingshuai/cpp-study/const/const_1.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/const/const_1.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o const/CMakeFiles/tmp.dir/tmp.cpp.o -c /home/zhangbingshuai/cpp-study/const/tmp.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/const/tmp.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o class/CMakeFiles/class_a.dir/class_a.cpp.o -c /home/zhangbingshuai/cpp-study/class/class_a.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/class/class_a.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o class/CMakeFiles/class_b.dir/class_b.cpp.o -c /home/zhangbingshuai/cpp-study/class/class_b.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/class/class_b.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o class/CMakeFiles/class_test.dir/class_test.cpp.o -c /home/zhangbingshuai/cpp-study/class/class_test.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/class/class_test.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o share_ptr/CMakeFiles/fjgk.dir/fjgk.cpp.o -c /home/zhangbingshuai/cpp-study/share_ptr/fjgk.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/share_ptr/fjgk.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o share_ptr/CMakeFiles/share_ptr.dir/share_ptr.cpp.o -c /home/zhangbingshuai/cpp-study/share_ptr/share_ptr.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/share_ptr/share_ptr.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o share_ptr/CMakeFiles/test_share_ptr_1.dir/test_share_ptr_1.cpp.o -c /home/zhangbingshuai/cpp-study/share_ptr/test_share_ptr_1.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/share_ptr/test_share_ptr_1.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o virtual/CMakeFiles/test_1.dir/test_1.cpp.o -c /home/zhangbingshuai/cpp-study/virtual/test_1.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/virtual/test_1.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o virtual/CMakeFiles/test_4.dir/test_4.cpp.o -c /home/zhangbingshuai/cpp-study/virtual/test_4.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/virtual/test_4.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o virtual/CMakeFiles/test_5.dir/test_5.cpp.o -c /home/zhangbingshuai/cpp-study/virtual/test_5.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/virtual/test_5.cpp"
+},
+{
+  "directory": "/home/zhangbingshuai/cpp-study/build",
+  "command": "/usr/bin/c++ -g -o virtual/CMakeFiles/test_6.dir/test_6.cpp.o -c /home/zhangbingshuai/cpp-study/virtual/test_6.cpp",
+  "file": "/home/zhangbingshuai/cpp-study/virtual/test_6.cpp"
+}
+]
